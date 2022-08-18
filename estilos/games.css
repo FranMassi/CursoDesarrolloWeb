@@ -1,0 +1,386 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 90px 1fr 90px;
+    grid-template-columns: 100%;
+    background-color: #FFF;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*______________________________________________________HEADER______________________________________________________*/
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c2c;
+    width: 100%;
+}
+
+.navItems {
+    display: none;
+}
+
+.botonMenu {
+    background-color: #FFF;
+    border-radius: 50%;
+    padding: 10px 10px 10px 10px;
+    margin-right: 30px;
+}
+
+.logo {
+    margin: 30px 0px 0px 30px;
+}
+/*______________________________________________________MAIN______________________________________________________*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.imagenDeApertura {
+    display: none;
+}
+
+.informacionDelJuego {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/originals/a9/9e/e5/a99ee553b34b3ff0668f952fcc565dab.jpg);
+}
+
+.gameCover {
+    padding-top: 50px;
+}
+
+.juego__info {
+    margin-bottom: 50px;
+    width: 80%;
+    color: #FFF;
+}
+
+.juego__info h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 10px 0px 10px 0px;
+}
+
+.juego__info hr {
+    margin: 10px 0px 10px 0px;
+}
+
+.juego__info h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.juego__info p {
+    font-size: 1rem;
+}
+
+.valoraciones {
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+}
+
+.valoraciones hr {
+    border: #000000 1px solid;
+    width: 90%;
+    margin: 10px 0px 10px 0px;
+}
+
+.valoraciones p {
+    width: 85%;
+}
+
+/*------------Clasificacion por edades-----------*/
+.clasificaciónPorEdad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usa, .ue {
+    text-align: center;
+    width: 75px;
+    height: 75px;
+    margin-left: 20px;
+}
+
+.usa img, .ue img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ue img {
+    max-width: 100%;
+    max-height: 100%;
+}
+ /*______________________________________________________FOOTER______________________________________________________*/
+footer {
+    background-color: #1c1c2c;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer h4 {
+    display: none;
+}
+
+.footer__nav {
+    display: none;
+}
+
+.footer__rrss {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__rrss li {
+    list-style: none;
+    background-color: #FFF;
+    border: #FFF solid 2px;
+    border-radius: 50%;
+    padding: 5px 5px 3px 5px;
+    margin: 0px 15px 0px 0px;
+}
+
+/*________________________________________________________________DESKTOP________________________________________________________________*/
+@media screen and (min-width: 481px){
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-rows: 90px 1fr 90px;
+        grid-template-columns: 100%;
+    }
+    
+    header {
+        grid-area: header;
+    }
+    
+    main {
+        grid-area: main;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+
+ /*______________________________________________________HEADER______________________________________________________*/
+    header {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1c1c2c;
+    }
+    
+    .header__logo img {
+        margin-left: 100px;
+        padding-top: 30px;
+    }
+    
+    .botonMenu {
+        display: none;
+    }
+
+    .navItems {
+        overflow: visible;
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+    }
+    
+    .navItems li {
+        list-style: none;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    .navItems li a {
+        color: #FFF;
+        font-size: x-large;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        cursor: pointer;
+    }
+    
+    .navItems li a:hover {
+        color:  #f9d904;
+        border-bottom: 2px;
+        border-bottom-style: solid;
+        border-bottom-color:  #f9d904;
+    }
+
+/*______________________________________________________MAIN______________________________________________________*/
+    .imagenDeApertura {
+        width: 100%;
+        display: block;
+    }
+
+    /*-------------info y valoraciones------------*/
+    .infoYValoraciones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .informacionDelJuego {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        background-color: #bdbdbd;
+        width: 40%;
+        height: 80%;
+        padding: 20px;
+        margin-right: 20px;
+        background-image: none;
+    }
+
+    .valoraciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 40%;
+        height: 400px;
+    }
+
+    .juego1, .juego2 {
+        display: flex;
+        align-items: center;
+        height: 450px;
+    }
+
+    .juego__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: #000000;
+        margin-left: 50px;
+    }
+
+    .juego__info h1 {
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+
+    .juego__info h4 {
+        font-size: 20px;
+    }
+
+    .gameCover {
+        margin-left: 10px;
+    }
+
+    /*------------Clasificacion por edades-----------*/
+    .clasificaciónPorEdad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0px 50px 0px;
+    }
+
+    .usa, .ue {
+        text-align: center;
+        width: 75px;
+        height: 75px;
+        margin-left: 20px;
+    }
+
+    .usa img, .ue img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .ue img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+ /*______________________________________________________FOOTER______________________________________________________*/
+    footer {
+        display: flex;
+        background-color: #1c1c2c;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer h4 {
+        color: #FFF;
+        font-size: large;
+        display: block;
+    }
+
+    .footer__nav {
+        display: flex;
+    }
+
+    .footer__nav li {
+        list-style: none;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .footer__nav li a {
+        color: #FFF;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+
+    .footer__nav li a:hover {
+        color:  #f9d904;
+        border-bottom: 2px;
+        border-bottom-style: solid;
+        border-bottom-color:  #f9d904;
+    }
+
+    .footer__rrss {
+        display: flex;
+        justify-content: right;
+        padding-top: 5px;
+    }
+
+    .footer__rrss li {
+        list-style: none;
+        background-color: #FFF;
+        border: #FFF solid 2px;
+        border-radius: 50%;
+        padding: 5px 5px 3px 5px;
+        margin: 0px 15px 5px 0px;
+    }
+}
