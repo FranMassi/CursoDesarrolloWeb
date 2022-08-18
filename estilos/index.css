@@ -269,13 +269,6 @@ footer h4 {
         width: 100%;
     }
 
-    #noticias section {
-        transition: transform 1s;
-    }
-
-    #noticias section:hover {
-        transform: translate(0px, -50px);
-    }
 
     #noticias section h3 {
         font-size: xx-large;
