@@ -2,229 +2,142 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Rubik', sans-serif;
-}
-
-body {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    grid-template-rows: 90px 1fr 90px;
-    grid-template-columns: 100%;
-    background-color: #FFF;
-}
-
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
+    box-sizing: border-box;
 }
 
 /*______________________________________________________HEADER______________________________________________________*/
 header {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #1c1c2c;
-    width: 100%;
 }
 
-.navItems {
+.bigNav {
     display: none;
-}
-
-.botonMenu {
-    background-color: #FFF;
-    border-radius: 50%;
-    padding: 10px 10px 10px 10px;
-    margin-right: 30px;
-}
+} 
 
 .logo {
-    margin: 30px 0px 0px 30px;
+    margin-left: 20px;
+} 
+
+.navItems a {
+    color:  #f9d904;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
+
+.navItems li {
+    padding-left: 10px;
+}
+
 /*______________________________________________________MAIN______________________________________________________*/
 
 main {
     text-align: center;
-    margin-bottom: 50px;
-    width: 100%;
+    margin: 50px 0px 30px 0px;
 }
 
-.sobreNosostros {
-    margin: 50px 0px 50px 0px;
+.sobreNosostros img {
+    width: 50%;
+    height: auto;
 }
 
 .sobreNosostros p {
     color:#1c1c2c;
     font-size: large;
+    width: 80%;
     margin-bottom: 20px;
-    
 }
 
 main h1 {
-    margin-bottom: 40px;
+    padding: 100px 0px 40px 0;
     text-transform: uppercase;
     font-size: xxx-large;
 }
 
 .equipo img {
-    width: 100%;
-    height: auto;
+    height: 300px;
+    width: 300px;
 }
 
 .miembro {
-    padding: 0px 50px 0px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 50px;
 }
 
-.miembro div {
-    height: 300px;
-    width: 300px;
-    margin-bottom: 30px;
+.miembro img {
+    margin-bottom: -100px;
 }
 
-.miembro h3 {
-    margin-bottom: 20px;
+.miembro h1 {
     font-size: xx-large;
 }
 
 .miembro p {
-    width: 325px;
     text-align: left;
     font-size: large;
 }
 
-
  /*______________________________________________________FOOTER______________________________________________________*/
-footer {
+ footer {
     background-color: #1c1c2c;
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
-footer h4 {
-    display: none;
+.bi {
+    font-size: xx-large;
+    color:#FFF;
 }
 
-.footer__nav {
-    display: none;
-}
-
-.footer__rrss {
-    display: flex;
-    justify-content: center;
-}
-
-.footer__rrss li {
-    list-style: none;
-    background-color: #FFF;
-    border: #FFF solid 2px;
-    border-radius: 50%;
-    padding: 5px 5px 3px 5px;
-    margin: 0px 15px 0px 0px;
+.copyright {
+    background-color: #1c1c2c;
 }
 
 /*________________________________________________________________DESKTOP________________________________________________________________*/
-@media screen and (min-width: 481px){
-    body {
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-        grid-template-rows: 90px 1fr 90px;
-        grid-template-columns: 100%;
-    }
-    
-    header {
-        grid-area: header;
-    }
-    
-    main {
-        grid-area: main;
-    }
-    
-    footer {
-        grid-area: footer;
-    }
-
- /*______________________________________________________HEADER______________________________________________________*/
-    header {
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #1c1c2c;
-    }
-    
-    .header__logo img {
-        margin-left: 100px;
-        padding-top: 30px;
-    }
-    
-    .botonMenu {
+@media screen and (min-width: 992px){
+/*______________________________________________________HEADER______________________________________________________*/
+    .dropdown {
         display: none;
     }
 
-    .navItems {
-        overflow: visible;
+    .bigNav {
         display: flex;
-        align-items: center;
-        margin-right: 50px;
-    }
-    
-    .navItems li {
-        list-style: none;
-        padding: 0px 10px 0px 10px;
-    }
-    
-    .navItems li a {
-        color: #FFF;
-        font-size: x-large;
-        font-weight: bold;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        cursor: pointer;
-    }
-    
-    .navItems li a:hover {
-        color:  #f9d904;
-        border-bottom: 2px;
-        border-bottom-style: solid;
-        border-bottom-color:  #f9d904;
     }
 
+    header {
+        height: 90px;
+    }
+
+    .logo {
+        margin-left: 100px;
+    }
+
+    .navbig a {
+            color: #FFF;
+            font-size: xx-large;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            cursor: pointer;
+    }
+
+    .navItems li {
+    list-style: none;
+    padding: 0px 10px 0px 10px;
+    }
 /*______________________________________________________MAIN______________________________________________________*/
     main {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 50px;
+        margin: 50px 0px 400px 0px;
     }
 
-    .sobreNosostros {
-        margin: 50px 0px 50px 0px;
+    .sobreNosostros img {
+        width: 40%;
+        height: auto;
     }
 
     .sobreNosostros p {
-        color:#1c1c2c;
-        font-size: large;
-        margin-bottom: 20px;
-        
+        font-size: x-large;
+        margin-bottom: 0px;
     }
 
     main h1 {
@@ -237,20 +150,7 @@ footer h4 {
         width: 100%;
         height: 100%;
     }
-
-    .equipo {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .miembro {
-        padding: 0px 50px 0px 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 50px;
-    }
-
+    
     .miembro div {
         height: 300px;
         width: 300px;
@@ -263,62 +163,8 @@ footer h4 {
     }
 
     .miembro p {
-        width: 325px;
+        width: 300px;
         text-align: left;
-        font-size: large;
-    }
-
- /*______________________________________________________FOOTER______________________________________________________*/
-    footer {
-        display: flex;
-        background-color: #1c1c2c;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    footer h4 {
-        color: #FFF;
-        font-size: large;
-        display: block;
-    }
-
-    .footer__nav {
-        display: flex;
-    }
-
-    .footer__nav li {
-        list-style: none;
-        padding: 0px 10px 0px 10px;
-    }
-
-    .footer__nav li a {
-        color: #FFF;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        cursor: pointer;
-        font-size: large;
-    }
-
-    .footer__nav li a:hover {
-        color:  #f9d904;
-        border-bottom: 2px;
-        border-bottom-style: solid;
-        border-bottom-color:  #f9d904;
-    }
-
-    .footer__rrss {
-        display: flex;
-        justify-content: right;
-        padding-top: 5px;
-    }
-
-    .footer__rrss li {
-        list-style: none;
-        background-color: #FFF;
-        border: #FFF solid 2px;
-        border-radius: 50%;
-        padding: 5px 5px 3px 5px;
-        margin: 0px 15px 5px 0px;
-    }
+        font-size: medium;
+    } 
 }
