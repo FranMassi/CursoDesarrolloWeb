@@ -4,12 +4,12 @@
     font-family: 'Rubik', sans-serif;
 }
 
----------------------------------
-.hola {
+/*______________________________________________________HEADER______________________________________________________*/
+header {
     background-color: #1c1c2c;
 }
 
-.navBig {
+.bigNav {
     display: none;
 } 
 
@@ -30,43 +30,17 @@
     padding-left: 10px;
 }
 
+/*______________________________________________________MAIN______________________________________________________*/
+main {
+    margin-top: 100px;
+}
 
-/* 
-.logo {
-    margin-left: 100px;
-} */
+.noticias {
+    margin-bottom: 50px;
+}
 
-/*.navItems {
-    margin-right: 100px;
-}*/
-
-/*.navItems li {
-    list-style: none;
-    padding: 0px 10px 0px 10px;
-}*/
-
-/*.navItems a {
-    color: #FFF;
-    font-size: xx-large;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    cursor: pointer;
-}*/
-
-/*.navItems li a:hover {
-    color:  #f9d904;
-    border-bottom: 2px;
-    border-bottom-style: solid;
-    border-bottom-color:  #f9d904;
-}*/
-
-
-----------------------------------------------------------------
 .noticias p {
-    font-size: large;
-    padding-bottom: 10px;
+    display: none;
 }
 
 .noticias img {
@@ -76,7 +50,11 @@
 
 .noticias h1 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
+}
+
+.noticia__particular {
+    margin-bottom: 20px;
 }
 
 .noticia__particular a {
@@ -84,36 +62,27 @@
     color: #1c1c2c;
 }
 
-----------------
+.nuestrosJuegos {
+    margin-bottom: 50px;
+}
+
 .nuestrosJuegos h1 {
-    margin: 10px 20px 0px 20px;
+    margin: 0px 20px 0px 20px;
 }
 
 .carousel {
     margin-top: 10px;
 }
 
-/*.carousel-item img {
-    width: 1280px;
-    height: 1040px;
-}*/
-
 .carousel-item img {
-    width: auto;
+    width: 90%;
     height: auto;
 }
 
-/*.noticia__particular:hover {
-    transform: translate(0px, -100px);
-}
-
-.noticias div {
-    transition: transform 1s;
-}*/
-
-
+/*______________________________________________________FOOTER______________________________________________________*/
 footer {
     background-color: #1c1c2c;
+
 }
 
 .bi {
@@ -125,14 +94,25 @@ footer {
     background-color: #1c1c2c;
 }
 
-/* @media screen and (min-width: 992px){
-    .navBig {
-        display: flex;
-    } 
-
-    .navItems {
+/*________________________________________________________________DESKTOP________________________________________________________________*/
+@media screen and (min-width: 992px){
+    
+    .dropdown {
         display: none;
     }
+
+    .bigNav {
+        display: flex;
+    }
+/*______________________________________________________HEADER______________________________________________________*/
+    header {
+        height: 90px;
+    }
+
+    .logo {
+        margin-left: 100px;
+    }
+
 
     .navbig a {
             color: #FFF;
@@ -143,4 +123,22 @@ footer {
             letter-spacing: 3px;
             cursor: pointer;
     }
-} */
+
+    .navItems li {
+    list-style: none;
+    padding: 0px 10px 0px 10px;
+    }
+
+    .noticia__particular p {
+        display: flex;
+        font-size: large;
+    }
+
+    .noticia__particular:hover {
+    transform: translate(0px, -50px);
+    }
+
+    .noticias div {
+        transition: transform 1s;
+    }
+}
