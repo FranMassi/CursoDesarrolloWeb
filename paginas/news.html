@@ -9,33 +9,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-<body>
+<body class="conteiner-fluid">
 <!--______________________________________________________HEADER______________________________________________________-->
-<header>
-    <a href="../index.html" class="logo">
-        <img src="../imagenes/game-over.png" alt="LOGO">
-    </a>
+    <header>
+        <nav class="row navbar justify-content-between align-items-center ">
+            <a class="logo col-1 navbar-brand" href="../index.html"><img src="../imagenes/game-over.png" alt="LOGO"></a>
 
-        <section id="nav">
-            <div class="botonMenu">
-                <a href="#"><img src="../imagenes/menu.png" alt=""></a>
+            <div class="dropdown col-2">
+                <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../imagenes/menu.png" alt="">
+                </button>
+                <ul class="navItems dropdown-menu dropdown-menu-dark">
+                    <li><a href="./paginas/games.html">Games</a></li>
+                    <li><a href="./paginas/news.html">News</a></li>
+                    <li><a href="./paginas/team.html">Team</a></li>
+                    <li><a href="./paginas/contact.html">Contact</a></li>
+                </ul>
             </div>
-
-            <ul class="navItems">
-                <li><a href="../paginas/games.html">Games</a></li>
-                <li><a href="../paginas/news.html">News</a></li>
-                <li><a href="../paginas/team.html">Team</a></li>
-                <li><a href="../paginas/contact.html">Contact</a></li>
-            </ul>
-        </section>
-</header>
+            
+            <div class="bigNav col-6 col-xl-5">
+                <ul class="navItems d-flex">
+                    <li><a href="./paginas/games.html">Games</a></li>
+                    <li><a href="./paginas/news.html">News</a></li>
+                    <li><a href="./paginas/team.html">Team</a></li>
+                    <li><a href="./paginas/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
 <!--______________________________________________________MAIN______________________________________________________-->
-    <main>
-        <h1>Latest News</h1>
+    <main class="row">
+        <h1 class="col-12">Latest News</h1>
 
-        <Section>
+        <Section class="col-12">
             <article>
                 <h2>News Title</h2>
                 <h6>April 28, 2022</h6>
@@ -52,7 +62,7 @@
 
             <hr>
 
-            <article>
+            <article class="col-12">
                 <h2>News Title</h2>
                 <h6>April 28, 2022</h6>
                 <img src="https://cdn.akamai.steamstatic.com/steam/apps/1030300/capsule_616x353.jpg?t=1572306963" alt="">
@@ -68,45 +78,24 @@
         </Section>
     </main>
 <!--______________________________________________________FOOTER______________________________________________________-->
-    <footer>
-        <nav>
-            <ul class="footer__nav">
-                <li><a href="../paginas/games.html">Games</a></li>
-                <li><a href="../paginas/news.html">News</a></li>
-                <li><a href="../paginas/team.html">Team</a></li>
-                <li><a href="../paginas/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+<footer class="text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-discord"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-youtube"></i></a>
+        </section>
+    </div>
 
-        <h4>Copyright © 2022 GAME OVER</h4>
-        
-        <ul class="footer__rrss">
-            <li>
-                <a href="https://www.facebook.com/">
-                    <img src="../imagenes/facebook.png" alt="Logo de Facebook">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/?hl=en">
-                    <img src="../imagenes/instagram.png" alt="Logo de instagram">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/">
-                    <img src="../imagenes/youtube.png" alt="Logo de YouTube">
-                </a>
-            </li>
-            <li>
-                <a href="https://discord.com/">
-                    <img src="../imagenes/discord.png" alt="Logo de Discord">
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/">
-                    <img src="../imagenes/twitter.png" alt="Logo de Twitter">
-                </a>
-            </li>
-        </ul>
-    </footer>
+    <!-- Copyright -->
+    <div class="copyright text-center p-3">
+    © 2020 Copyright GAME OVER
+    </div>
+     <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</footer>
 </body>
 </html>
