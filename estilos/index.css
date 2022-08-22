@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     font-family: 'Rubik', sans-serif;
-    box-sizing: border-box;
 }
 
 /*______________________________________________________HEADER______________________________________________________*/
@@ -120,7 +119,7 @@ footer {
     list-style: none;
     padding: 0px 10px 0px 10px;
     }
-
+/*______________________________________________________MAIN______________________________________________________*/
     .noticia__particular p {
         display: flex;
         font-size: large;

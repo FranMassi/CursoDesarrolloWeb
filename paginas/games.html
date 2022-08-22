@@ -9,39 +9,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-<body>
+<body class="conteiner-fluid">
 <!--______________________________________________________HEADER______________________________________________________-->
-<header>
-    <a href="../index.html" class="logo">
-        <img src="../imagenes/game-over.png" alt="LOGO">
-    </a>
+    <header>
+        <nav class="row-fluid navbar justify-content-between align-items-center ">
+            <a class="logo col-1 navbar-brand" href="../index.html"><img src="../imagenes/game-over.png" alt="LOGO"></a>
 
-        <section id="nav">
-            <div class="botonMenu">
-                <a href="#"><img src="../imagenes/menu.png" alt=""></a>
+            <div class="dropdown col-3 col-sm-2">
+                <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../imagenes/menu.png" alt="">
+                </button>
+                <ul class="navItems dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                    <li><a href="../paginas/games.html">Games</a></li>
+                    <li><a href="../paginas/news.html">News</a></li>
+                    <li><a href="../paginas/team.html">Team</a></li>
+                    <li><a href="../paginas/contact.html">Contact</a></li>
+                </ul>
             </div>
-
-            <ul class="navItems">
-                <li><a href="../paginas/games.html">Games</a></li>
-                <li><a href="../paginas/news.html">News</a></li>
-                <li><a href="../paginas/team.html">Team</a></li>
-                <li><a href="../paginas/contact.html">Contact</a></li>
-            </ul>
-        </section>
-</header>
+            
+            <div class="bigNav col-6 col-xl-5">
+                <ul class="navItems d-flex">
+                    <li><a href="../paginas/games.html">Games</a></li>
+                    <li><a href="../paginas/news.html">News</a></li>
+                    <li><a href="../paginas/team.html">Team</a></li>
+                    <li><a href="../paginas/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
 <!--______________________________________________________MAIN______________________________________________________-->
 <main>
-    <img src="https://i.pinimg.com/originals/a9/9e/e5/a99ee553b34b3ff0668f952fcc565dab.jpg" alt="" class="imagenDeApertura">
+    <!-- <img src="https://i.pinimg.com/originals/a9/9e/e5/a99ee553b34b3ff0668f952fcc565dab.jpg" alt="" class="imagenDeApertura col-lg-12"> -->
     
 <!---------------Inforamción y Valoraciones----------------->
-    <article class="infoYValoraciones">
-        <section class="informacionDelJuego">
+    <article class="infoYValoraciones d-flex flex-column justify-content-around align-items-center"">
+        <section class="informacionDelJuego col-11 col-lg-12 d-flex flex-column justify-content-center align-items-center">
             <img src="../imagenes/gamecover1.jpg" alt="Game Cover" class="gameCover">
             <div class="juego__info">
                 <h1>Game title</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde quam veniam quia, repellendus nesciunt rem inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam aut aperiam similique earum reprehenderit laudantium illo, accusantium est aliquid eum iusto, rem tempora dolore dolorem recusandae ratione illum vel. Numquam temporibus accusamus commodi nisi, veniam, veritatis cupiditate tempora voluptatum facere nesciunt impedit ducimus, provident sequi culpa voluptatibus ut incidunt?</p>
                 <hr>
                 <h4>Available on</h4>
             
@@ -54,7 +64,7 @@
                 </section>
             </div>
         </section>
-        <section class="valoraciones">
+        <section class="valoraciones col-12 col-lg-10 d-flex flex-column justify-content-around align-items-center">
             <h3>What people are saying</h3>
 
             <hr>
@@ -72,15 +82,15 @@
     </article>
 
 <!--------------Clasificación por edades---------------->
-    <article class="clasificaciónPorEdad">
+    <article class="clasificaciónPorEdad  col-12 d-flex justify-content-center align-items-center">
         <h3>This game <br> is rated</h3>
 
-        <div class="usa">
+        <div class="usa col-3 col-sm-2 col-lg-2">
             <img src="data:image/png;base64,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" alt="">
             <h5>USA/CANADA</h5>
         </div>
 
-        <div class="ue">
+        <div class="ue col-3 col-sm-2 col-lg-2">
             <img src="https://thunderlotusgames.com/wp-content/uploads/2020/08/pegi_12_white.png" alt="">
             <h5>EUROPE</h5>
         </div>
@@ -88,45 +98,24 @@
 </main>
 
 <!--______________________________________________________FOOTER______________________________________________________-->
-    <footer>
-        <nav>
-            <ul class="footer__nav">
-                <li><a href="../paginas/games.html">Games</a></li>
-                <li><a href="../paginas/news.html">News</a></li>
-                <li><a href="../paginas/team.html">Team</a></li>
-                <li><a href="../paginas/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+<footer class="text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-discord"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-youtube"></i></a>
+        </section>
+    </div>
 
-        <h4>Copyright © 2022 GAME OVER</h4>
-        
-        <ul class="footer__rrss">
-            <li>
-                <a href="https://www.facebook.com/">
-                    <img src="../imagenes/facebook.png" alt="Logo de Facebook">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/?hl=en">
-                    <img src="../imagenes/instagram.png" alt="Logo de instagram">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/">
-                    <img src="../imagenes/youtube.png" alt="Logo de YouTube">
-                </a>
-            </li>
-            <li>
-                <a href="https://discord.com/">
-                    <img src="../imagenes/discord.png" alt="Logo de Discord">
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/">
-                    <img src="../imagenes/twitter.png" alt="Logo de Twitter">
-                </a>
-            </li>
-        </ul>
-    </footer>
+    <!-- Copyright -->
+    <div class="copyright text-center p-3">
+    © 2020 Copyright GAME OVER
+    </div>
+     <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</footer>
 </body>
 </html>

@@ -32,16 +32,16 @@ header {
 }
 
 /*______________________________________________________MAIN______________________________________________________*/
-main{
-    margin: 50px 0px 20px 0px;
+main {
+    padding: 50px 40px 50px 40px;
 }
 
 main h1 {
-    margin-left: 50px;
+    margin: 50px 0px 0px 0px;
 }
 
 .texto {
-    margin: 50px 0px 50px 50px;
+    margin: 50px 10px 50px 0px;
     width: 80%;
 }
 
@@ -52,7 +52,7 @@ main h1 {
 .cuestionario {
     background-color: #bdbdbd;
     padding: 30px;
-    margin: 0px 10px 0px 15px;
+    margin: 0px 10px 0px 0px;
 }
 
 .cuestionario form {
@@ -164,6 +164,11 @@ label textarea {
 
     main h1 {   
         margin-bottom:50px;
+    }
+
+
+    .contactaNos {
+        display: flex;
     }
 
     .texto {
