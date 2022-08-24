@@ -3,7 +3,6 @@
     margin: 0;
     font-family: 'Rubik', sans-serif;
 }
-
 /*______________________________________________________HEADER______________________________________________________*/
 header {
     background-color: #1c1c2c;
@@ -31,42 +30,44 @@ header {
 }
 
 /*______________________________________________________MAIN______________________________________________________*/
-main {
+
+/*_______________________________________Index_______________________________________*/
+.index__main {
     margin-top: 100px;
 }
 
-.noticias {
+.index__noticias {
     margin-bottom: 10px;
 }
 
-.noticias p {
+.index__noticias p {
     display: none;
 }
 
-.noticias img {
+.index__noticias img {
     width: 100%;
     height: auto;
 }
 
-.noticias h1 {
+.index__noticias h1 {
     text-align: center;
     margin-top: 5px;
 }
 
-.noticia__particular {
+.index__noticia__particular {
     margin-bottom: 20px;
 }
 
-.noticia__particular a {
+.index__noticia__particular a {
     text-decoration: none;
     color: #1c1c2c;
 }
 
-.nuestrosJuegos {
+.index__nuestrosJuegos {
     margin-bottom: 50px;
 }
 
-.nuestrosJuegos h1 {
+.index__nuestrosJuegos h1 {
     margin: 0px 20px 0px 20px;
 }
 
@@ -120,16 +121,17 @@ footer {
     padding: 0px 10px 0px 10px;
     }
 /*______________________________________________________MAIN______________________________________________________*/
-    .noticia__particular p {
+/*_______________________________________Index_______________________________________*/
+    .index__noticia__particular p {
         display: flex;
         font-size: large;
     }
 
-    .noticia__particular:hover {
+    .index__noticia__particular:hover {
     transform: translate(0px, -50px);
     }
 
-    .noticias div {
+    .index__noticias div {
         transition: transform 1s;
     }
 }

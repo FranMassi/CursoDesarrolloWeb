@@ -13,79 +13,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="conteiner-fluid">
+<body class="conteiner">
 <!--______________________________________________________HEADER______________________________________________________-->
     <header>
-        <nav class="row-fluid navbar justify-content-between align-items-center ">
-            <a class="logo col-1 navbar-brand" href="./index.html"><img src="./imagenes/game-over.png" alt="LOGO"></a>
+            <div class="container">
+                <nav class="navbar d-flex justify-content-between align-items-center">
+                    <a class="logo navbar-brand" href="./index.html"><img src="./imagenes/game-over.png" alt="LOGO"></a>
 
-            <div class="dropdown col-3 col-sm-2">
-                <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="./imagenes/menu.png" alt="">
-                </button>
-                <ul class="navItems dropdown-menu dropdown-menu-end dropdown-menu-dark">
-                    <li><a href="./paginas/games.html">Games</a></li>
-                    <li><a href="./paginas/news.html">News</a></li>
-                    <li><a href="./paginas/team.html">Team</a></li>
-                    <li><a href="./paginas/contact.html">Contact</a></li>
-                </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./imagenes/menu.png" alt="">
+                        </button>
+                        <ul class="navItems dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                            <li><a href="./paginas/games.html">Games</a></li>
+                            <li><a href="./paginas/news.html">News</a></li>
+                            <li><a href="./paginas/team.html">Team</a></li>
+                            <li><a href="./paginas/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bigNav">
+                        <ul class="navItems d-flex">
+                            <li><a href="./paginas/games.html">Games</a></li>
+                            <li><a href="./paginas/news.html">News</a></li>
+                            <li><a href="./paginas/team.html">Team</a></li>
+                            <li><a href="./paginas/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            
-            <div class="bigNav col-6 col-xl-5">
-                <ul class="navItems d-flex">
-                    <li><a href="./paginas/games.html">Games</a></li>
-                    <li><a href="./paginas/news.html">News</a></li>
-                    <li><a href="./paginas/team.html">Team</a></li>
-                    <li><a href="./paginas/contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
     </header>
 
 <!--______________________________________________________MAIN______________________________________________________-->
-    <main class="conteiner-fluit">
-<!-----------------------Noticias------------------------->
-        <div class="noticias row d-flex justify-content-evenly">
-            <div class="noticia__particular col-8 col-sm-8 col-md-7 col-lg-3 card border-0">
-                <a href="./paginas/news.html">
-                    <img src="./imagenes/hotnews1.jpg" alt="Imagen de la Noticia">
-                    <div class="card-body">
-                    <h1 class="card-title">Titulo de la Noticia</h1>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus accusantium debitis eius, quas doloremque vitae officia fuga vel</p>
-                    </div>
-                </a>
-              </div>
+    <main class="index__main">
+<!-------------------------Noticias------------------------->
+        <div class="container-fluid">
+            <div class="index__noticias row d-flex justify-content-evenly">
+                <div class="index__noticia__particular col-8 col-sm-8 col-md-7 col-lg-3 card border-0">
+                    <a href="./paginas/news.html">
+                        <img src="./imagenes/hotnews1.jpg" alt="Imagen de la Noticia">
+                        <div class="card-body">
+                        <h1 class="card-title">Titulo de la Noticia</h1>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus accusantium debitis eius, quas doloremque vitae officia fuga vel</p>
+                        </div>
+                    </a>
+                </div>
 
-              <div class="noticia__particular col-8 col-sm-8 col-md-7 col-lg-3 card border-0">
-                <a href="./paginas/news.html">
-                    <img src="./imagenes/hotnews1.jpg" alt="Imagen de la Noticia">
-                    <div class="card-body">
-                    <h1 class="card-title">Titulo de la Noticia</h1>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus accusantium debitis eius, quas doloremque vitae officia fuga vel</p>
-                    </div>
-                </a>
-              </div>
+                <div class="index__noticia__particular col-8 col-sm-8 col-md-7 col-lg-3 card border-0">
+                    <a href="./paginas/news.html">
+                        <img src="./imagenes/hotnews1.jpg" alt="Imagen de la Noticia">
+                        <div class="card-body">
+                        <h1 class="card-title">Titulo de la Noticia</h1>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus accusantium debitis eius, quas doloremque vitae officia fuga vel</p>
+                        </div>
+                    </a>
+                </div>
 
-              <div class="noticia__particular col-8 col-sm-8 col-md-7 col-lg-3 card border-0">
-                <a href="./paginas/news.html">
-                    <img src="./imagenes/hotnews1.jpg" alt="Imagen de la Noticia">
-                    <div class="card-body">
-                    <h1 class="card-title">Titulo de la Noticia</h1>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus accusantium debitis eius, quas doloremque vitae officia fuga vel</p>
-                    </div>
-                </a>
+                <div class="index__noticia__particular col-8 col-sm-8 col-md-7 col-lg-3 card border-0">
+                    <a href="./paginas/news.html">
+                        <img src="./imagenes/hotnews1.jpg" alt="Imagen de la Noticia">
+                        <div class="card-body">
+                        <h1 class="card-title">Titulo de la Noticia</h1>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus accusantium debitis eius, quas doloremque vitae officia fuga vel</p>
+                        </div>
+                    </a>
+                </div>
             </div>
+<!-------------------------Nuestros Juegos------------------------->
+            <article class="index__nuestrosJuegos row">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <img src="./imagenes/down-arrow.png" alt="flecha para abajo">
+                    <h1>Our Games</h1>
+                    <img src="./imagenes/down-arrow.png" alt="flecha para abajo">
+                </div>
+            </article>
         </div>
-<!-----------------------------Nuestros Juegos----------------------------->
-        <article class="nuestrosJuegos row">
-            <div class="col d-flex justify-content-center align-items-center">
-                <img src="./imagenes/down-arrow.png" alt="flecha para abajo">
-                <h1>Our Games</h1>
-                <img src="./imagenes/down-arrow.png" alt="flecha para abajo">
-            </div>
-        </article>
-<!-----------------------------Games----------------------------->
-        <div class="carousel slide" data-bs-ride="true">
+        
+<!-------------------------Carousel------------------------->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -104,12 +109,11 @@
                 </div>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -117,7 +121,7 @@
     </main>
 <!--______________________________________________________FOOTER______________________________________________________-->
     <footer class="text-center text-white">
-        <!-- Grid container -->
+
         <div class="container p-4 pb-0">
             <section class="mb-4">
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
@@ -128,13 +132,10 @@
             </section>
         </div>
 
-        <!-- Copyright -->
         <div class="copyright text-center p-3">
         © 2020 Copyright GAME OVER
         </div>
-  </footer>
-
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </footer> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
