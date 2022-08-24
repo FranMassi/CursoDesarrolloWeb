@@ -31,66 +31,60 @@ header {
 }
 
 /*______________________________________________________MAIN______________________________________________________*/
-main{
-    width: 100%;
-    height: 100%;
-    padding-bottom: 100px;
+.games__main{
+    padding-bottom: 50px;
 }
-/* 
-.imagenDeApertura {
-    display: none;
-} */
 
-.informacionDelJuego {
+.games__informacionDelJuego {
     background-color:#1c1c2c;
     margin-top: 10px;
 }
 
-.gameCover {
+.games__gameCover {
     padding-top: 50px;
 }
 
-.juego__info {
+.games__infoDelJuego {
     margin-bottom: 50px;
     width: 80%;
     color: #FFF;
 }
 
-.juego__info h1 {
+.games__infoDelJuego h1 {
     font-size: 2rem;
     text-transform: uppercase;
     margin: 10px 0px 10px 0px;
 }
 
-.juego__info hr {
+.games__infoDelJuego hr {
     margin: 10px 0px 10px 0px;
 }
 
-.juego__info h4 {
+.games__infoDelJuego h4 {
     font-size: 32px;
     margin-bottom: 10px;
 }
 
-.juego__info p {
+.games__infoDelJuego p {
     font-size: 16px;
 }
 
-.gamesStore img {
+.games__gamesStore img {
     margin: 10px 10px 0px 0px;
 }
 
-.valoraciones {
+.games__valoraciones {
     margin: 20px 0px 20px 0px;
     height: 500px;
 }
 
-.valoraciones hr {
+.games__valoraciones hr {
     border: #000000 1px solid;
     width: 90%;
     margin: 10px 0px 10px 0px;
 }
 
-.valoraciones p {
+.games__valoraciones p {
     width: 85%;
 }
 
@@ -162,8 +156,7 @@ footer {
     }
 /*______________________________________________________MAIN______________________________________________________*/
     /*-------------info y valoraciones------------*/
-    .informacionDelJuego {
+    .games__informacionDelJuego {
         background-image: url(https://i.pinimg.com/originals/a9/9e/e5/a99ee553b34b3ff0668f952fcc565dab.jpg);
     }
-    /*------------Clasificacion por edades-----------*/
 }

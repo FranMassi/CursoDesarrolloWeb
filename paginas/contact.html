@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nombre del emprendimiento/contacto</title>
-    <link rel="stylesheet" href="../estilos/contact.css">
+    <link rel="stylesheet" href="../estilos/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet">
@@ -15,115 +15,88 @@
 <body class="container-fluid">
     <!--______________________________________________________HEADER______________________________________________________-->
     <header>
-        <nav class="row navbar justify-content-between align-items-center ">
-            <a class="logo col-1 navbar-brand" href="../index.html"><img src="../imagenes/game-over.png" alt="LOGO"></a>
+        <div class="container">
+            <nav class="navbar d-flex justify-content-between align-items-center">
+                <a class="logo navbar-brand" href="../index.html"><img src="../imagenes/game-over.png" alt="LOGO"></a>
 
-            <div class="dropdown col-3 col-sm-2">
-                <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="../imagenes/menu.png" alt="">
-                </button>
-                <ul class="navItems dropdown-menu dropdown-menu-end dropdown-menu-dark">
-                    <li><a href="../paginas/games.html">Games</a></li>
-                    <li><a href="../paginas/news.html">News</a></li>
-                    <li><a href="../paginas/team.html">Team</a></li>
-                    <li><a href="../paginas/contact.html">Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="bigNav col-6 col-xl-5">
-                <ul class="navItems d-flex">
-                    <li><a href="../paginas/games.html">Games</a></li>
-                    <li><a href="../paginas/news.html">News</a></li>
-                    <li><a href="../paginas/team.html">Team</a></li>
-                    <li><a href="../paginas/contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+                <div class="dropdown">
+                    <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../imagenes/menu.png" alt="">
+                    </button>
+                    <ul class="navItems dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                        <li><a href="../paginas/games.html">Games</a></li>
+                        <li><a href="../paginas/news.html">News</a></li>
+                        <li><a href="../paginas/team.html">Team</a></li>
+                        <li><a href="../paginas/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="bigNav">
+                    <ul class="navItems d-flex">
+                        <li><a href="../paginas/games.html">Games</a></li>
+                        <li><a href="../paginas/news.html">News</a></li>
+                        <li><a href="../paginas/team.html">Team</a></li>
+                        <li><a href="../paginas/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 <!--______________________________________________________MAIN______________________________________________________-->
-    <main class="row">
-        <h1>Contact us</h1>
-
-        <article class="contactaNos">
-            <Section class="texto col-12 col-lg-6">
-                <h2>Got a question or comment for us at GAME OVER?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur optio ex incidunt inventore minus necessitatibus magnam perferendis earum obcaecati harum quasi odio, iusto quae eum aspernatur blanditiis unde dolor sit?</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur optio ex incidunt inventore minus necessitatibus magnam perferendis earum obcaecati harum quasi odio, iusto quae eum aspernatur blanditiis unde dolor sit?</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur optio ex incidunt inventore minus necessitatibus magnam perferendis earum obcaecati harum quasi odio, iusto quae eum aspernatur blanditiis unde dolor sit?</p>    
-            </Section>
+    <main class="contact__main">
+        <div class="container-fluid">
             
-            <!-- <form>
-                <div class="form-group">
-                  <label for="name"><h4>Name</h4></label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                  <label for="email"><h4>Email</h4></label>
-                  <input type="email" class="form-control" id="exampleInputPassword1" placeholder="email">
-                </div>
-                <select class="form-control">
-                    <option value="support">Support</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="media">Press</option>
-                    <option value="Bussines">Bussines</option>
-                  </select>
-                <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Join the GAME OVER Mailing List</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <button type="reset" class="btn btn-primary">Restablecer</button>
-              </form> -->
-            
-              <Section class="cuestionario col-12 col-lg-6">
-                <form action="#">
-                    <label for="name">
-                        <h4>Name</h4>
-                        <input type="text" name="name">
-                    </label>
+            <h1 class="row">Contact us</h1>
 
-                    <label for="mail">
-                        <h4>Your mail</h4>
-                        <input type="text" name="mail">
-                    </label>
+            <article class="contact__contactaNos row d-flex">
+                <Section class="contact__texto col-12 col-lg-6">
+                    <h2>Got a question or comment for us at GAME OVER?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur optio ex incidunt inventore minus necessitatibus magnam perferendis earum obcaecati harum quasi odio, iusto quae eum aspernatur blanditiis unde dolor sit?</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur optio ex incidunt inventore minus necessitatibus magnam perferendis earum obcaecati harum quasi odio, iusto quae eum aspernatur blanditiis unde dolor sit?</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur optio ex incidunt inventore minus necessitatibus magnam perferendis earum obcaecati harum quasi odio, iusto quae eum aspernatur blanditiis unde dolor sit?</p>    
+                </Section>
+                
+                <form class="col-12 col-lg-6 contact__TodoElCuestionario">
+                    <div class="contact__cuestionario form-group">
+                    <label for="name"><h4>Name</h4></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                    </div>
 
-                    <label for="subject" id="materia">
-                        <h4>Subject</h4>
-                        <select name="subject">
-                            <option value="support">Support</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="media">Press</option>
-                            <option value="Bussines">Bussines</option>
-                        </select>
-                    </label>
+                    <div class="contact__cuestionario form-group">
+                    <label for="email"><h4>Email</h4></label>
+                    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="email">
+                    </div>
 
-                    <label for="comments">
-                        <h4>Message</h4>
-                        <textarea name="" id="" cols="" rows=""></textarea>
-                        <br>
-                        <input type="submit" placeholder="Send" class="botones">
-                        <input type="reset" placeholder="Clean" class="botones">
-                    </label>
+                    <select class="contact__cuestionario form-control">
+                        <option value="support">Support</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="media">Press</option>
+                        <option value="Bussines">Bussines</option>
+                    </select>
 
-                    <label for="mailng_list" class="listaDeMail">
-                        <input type="checkbox" name="acepta" value="1"/>
-                        <h4>Join the GAME OVER Mailing List</h4>
-                    </label>
+                    <div class="contact__cuestionario form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+
+                    <div class="contact__cuestionario form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Join the GAME OVER Mailing List</label>
+                    </div>
+
+                    <div class="contact__cuestionario">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-primary">Restart</button>
+                    </div>
                 </form>
-            </Section>
-        </article>       
+            </article>
+        </div>     
     </main>
 <!--______________________________________________________FOOTER______________________________________________________-->
 <footer class="text-center text-white">
-    <!-- Grid container -->
-    <div class="row p-4 pb-0">
+    <div class="container p-4 pb-0">
         <section class="mb-4">
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>
@@ -133,9 +106,8 @@
         </section>
     </div>
 
-    <!-- Copyright -->
     <div class="copyright text-center p-3">
-    © 2020 Copyright GAME OVER
+     <h5>© 2020 Copyright GAME OVER</h5>
     </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

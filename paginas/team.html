@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nombre del emprendimiento</title>
-    <link rel="stylesheet" href="../estilos/team.css">
+    <link rel="stylesheet" href="../estilos/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet">
@@ -15,69 +15,63 @@
 <body class="container-fluid">
 <!--______________________________________________________HEADER______________________________________________________-->
     <header>
-        <nav class="row-fluid navbar justify-content-between align-items-center ">
-            <a class="logo col-1 navbar-brand" href="../index.html"><img src="../imagenes/game-over.png" alt="LOGO"></a>
+        <div class="container">
+            <nav class="navbar d-flex justify-content-between align-items-center">
+                <a class="logo navbar-brand" href="../index.html"><img src="../imagenes/game-over.png" alt="LOGO"></a>
 
-            <div class="dropdown col-3 col-sm-2">
-                <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="../imagenes/menu.png" alt="">
-                </button>
-                <ul class="navItems dropdown-menu dropdown-menu-end dropdown-menu-dark">
-                    <li><a href="../paginas/games.html">Games</a></li>
-                    <li><a href="../paginas/news.html">News</a></li>
-                    <li><a href="../paginas/team.html">Team</a></li>
-                    <li><a href="../paginas/contact.html">Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="bigNav col-6 col-xl-5">
-                <ul class="navItems d-flex">
-                    <li><a href="../paginas/games.html">Games</a></li>
-                    <li><a href="../paginas/news.html">News</a></li>
-                    <li><a href="../paginas/team.html">Team</a></li>
-                    <li><a href="../paginas/contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+                <div class="dropdown">
+                    <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../imagenes/menu.png" alt="">
+                    </button>
+                    <ul class="navItems dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                        <li><a href="../paginas/games.html">Games</a></li>
+                        <li><a href="../paginas/news.html">News</a></li>
+                        <li><a href="../paginas/team.html">Team</a></li>
+                        <li><a href="../paginas/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="bigNav">
+                    <ul class="navItems d-flex">
+                        <li><a href="../paginas/games.html">Games</a></li>
+                        <li><a href="../paginas/news.html">News</a></li>
+                        <li><a href="../paginas/team.html">Team</a></li>
+                        <li><a href="../paginas/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
 <!--______________________________________________________MAIN______________________________________________________-->
-    <main>
-        <section class="sobreNosostros row justify-content-evenly">
-            <img class="col-12" src="../imagenes/game-overx256.png" alt="Logo de la empresa">
-            <p class="col-12">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            </p>
-            <p class="col-12">
-                Eveniet rem odio odit quibusdam sequi sapiente asperiores facilis tempore. Natus, vitae.
-            </p>
-        </section>
+    <main class="team-main">
+        <div class="conteiner">
+            <section class="team__sobreNosostros row justify-content-evenly">
+                <img class="col-12" src="../imagenes/game-overx256.png" alt="Logo de la empresa">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p>Eveniet rem odio odit quibusdam sequi sapiente asperiores facilis tempore. Natus, vitae.</p>
+            </section>
 
-        <h1 class="row justify-content-center">The team</h1>
+            <h1 class="row justify-content-center">The team</h1>
         
-        <div class="equipo row d-flex justify-content-evenly">
-            <div class="miembro col-12 col-sm-8 col-md-7 col-lg-3 card border-0">
-                    <div>
-                        <img src="https://images.squarespace-cdn.com/content/v1/52aa2169e4b06d986ca5d237/1595012737835-QCPXTE1Q8QW2BO7OI08Y/CV+portrait+circle.png" alt="Foto de miembro del equipo">
-                        <div class="card-body">
-                            <h1 class="card-title">Name</h1>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, hic accusamus! Impedit, sit quas perferendis in autem voluptate, accusantium, sunt veritatis tempora aliquam explicabo totam velit hic deserunt cumque vel magnam placeat. Voluptatem iusto enim explicabo deleniti eum, temporibus pariatur facere numquam fugiat dolorem aperiam</p>
-                        </div>
+            <div class="team__equipo row d-flex justify-content-evenly">
+                <div class="team__miembro col-12 col-sm-8 col-md-7 col-lg-3 card border-0">
+                    <img src="https://images.squarespace-cdn.com/content/v1/52aa2169e4b06d986ca5d237/1595012737835-QCPXTE1Q8QW2BO7OI08Y/CV+portrait+circle.png" alt="Foto de miembro del equipo">
+                    <div class="card-body">
+                        <h1 class="card-title">Name</h1>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, hic accusamus! Impedit, sit quas perferendis in autem voluptate, accusantium, sunt veritatis tempora aliquam explicabo totam velit hic deserunt cumque vel magnam placeat. Voluptatem iusto enim explicabo deleniti eum, temporibus pariatur facere numquam fugiat dolorem aperiam</p>
                     </div>
-              </div>
+                </div>
 
-              <div class="miembro col-12 col-sm-8 col-md-7 col-lg-3 card border-0">
-                    <div>
-                        <img src="https://diamondcv.com/wp-content/uploads/Brendan-Hope_DiamondCV-Ltd-Round.png" alt="Foto de miembro del equipo">
-                        <div class="card-body">
-                            <h1 class="card-title">Name</h1>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, hic accusamus! Impedit, sit quas perferendis in autem voluptate, accusantium, sunt veritatis tempora aliquam explicabo totam velit hic deserunt cumque vel magnam placeat. Voluptatem iusto enim explicabo deleniti eum, temporibus pariatur facere numquam fugiat dolorem aperiam</p>
-                        </div>
+                <div class="team__miembro col-12 col-sm-8 col-md-7 col-lg-3 card border-0">
+                    <img src="https://diamondcv.com/wp-content/uploads/Brendan-Hope_DiamondCV-Ltd-Round.png" alt="Foto de miembro del equipo">
+                    <div class="card-body">
+                        <h1 class="card-title">Name</h1>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, hic accusamus! Impedit, sit quas perferendis in autem voluptate, accusantium, sunt veritatis tempora aliquam explicabo totam velit hic deserunt cumque vel magnam placeat. Voluptatem iusto enim explicabo deleniti eum, temporibus pariatur facere numquam fugiat dolorem aperiam</p>
                     </div>
-              </div>
+                </div>
 
-              <div class="miembro col-12 col-sm-8 col-md-7 col-lg-3 card border-0">
-                <div>
+                <div class="team__miembro col-12 col-sm-8 col-md-7 col-lg-3 card border-0">
                     <img src="https://kshitijd20.github.io/images/kd_circle.png" alt="Foto de miembro del equipo">
                     <div class="card-body">
                         <h1 class="card-title">Name</h1>
@@ -89,9 +83,8 @@
     </main>
 
 <!--______________________________________________________footer______________________________________________________-->
-    <footer class="row text-center text-white">
-        <!-- Grid container -->
-        <div class="row p-4 pb-0">
+    <footer class="text-center text-white">
+        <div class="container p-4 pb-0">
             <section class="mb-4">
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>
@@ -101,7 +94,6 @@
             </section>
         </div>
 
-        <!-- Copyright -->
         <div class="copyright text-center p-3">
         © 2020 Copyright GAME OVER
         </div>
