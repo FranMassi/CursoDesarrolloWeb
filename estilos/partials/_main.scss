@@ -1,0 +1,74 @@
+/*_______________________________________Index_______________________________________*/
+.index__main{
+    margin-top: 100px;
+    background-color: $backgroundBodyColor;
+
+    .index__noticias{
+        margin-bottom: 10px;
+
+        .index__noticia__particular{
+            margin-bottom: 20px;
+
+            a {
+                text-decoration: none;
+                 color: $noticeTextColor;
+
+                 img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .card-body{
+                    h1 {
+                        text-align: center;
+                        margin-top: 5px;
+                    }
+            
+                    p{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .index__nuestrosJuegos{
+        margin-bottom: 50px;
+
+        h1{
+            margin: 0px 20px 0px 20px;
+            font-size: $fontOurGamesSize;
+        }
+    }
+
+}
+
+/*________________________________________________________________DESKTOP________________________________________________________________*/
+@media screen and (min-width: 992px){
+
+    /*_______________________________________Index_______________________________________*/
+    .index__main{
+        .container-fluid{
+            .index__noticias{
+                    .index__noticia__particular{
+                        transition: all 1s;
+                        
+                        &:hover{
+                            transform: translate(0px, -50px);
+                        }
+
+                        a {
+                            .card-body{
+                                p {
+                                    display: flex;
+                                    font-size: $fontNoticeSize;
+                                }
+                            }
+                    }
+                }
+            }
+        }
+        @import "./carousel";
+    }
+}

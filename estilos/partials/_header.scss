@@ -1,0 +1,81 @@
+header {
+    background-color: $backgroundHeaderColor;
+
+    nav {
+        .logo {
+            margin-left: 20px;
+        }
+
+        .dropdown {
+            .navItems {
+                a {
+                    color: $navTextColorMovile;
+                    text-decoration: none;
+                    font-size: $fontNavsizeMovile;
+                    font-weight: bold;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;  
+                }
+
+                li {
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        .bigNav {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    header{
+        height: 90px;
+
+        nav {
+            .logo {
+                margin-left: 20px;
+            }
+    
+            .dropdown {
+                display: none;
+            }
+    
+            .bigNav {
+                display: flex;
+                                
+                .navItems {
+                    a {
+                        color:  $navTextColorDesktop;
+                        text-decoration: none;
+                        font-size: $fontNavsizeDesktop;
+                        font-weight: bold;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        background-image: linear-gradient(currentColor, currentColor);
+                        background-position: 0% 100%;
+                        background-repeat: no-repeat;
+                        background-size: 0% 2px;
+                        transition: background-size .3s; 
+                        
+                        &:hover{
+                            background-size: 100% 2px;
+                            color:  $navTextColorDesktopHover;
+                        }
+
+                        &:focus {
+                            background-size: 100% 2px;
+                            color:  $navTextColorDesktopHover;
+                        }
+                    }
+    
+                    li {
+                        list-style: none;
+                        padding: 0px 10px 0px 10px;
+                    }
+                }
+            }
+        }
+    }
+}

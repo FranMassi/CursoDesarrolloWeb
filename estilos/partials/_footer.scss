@@ -1,0 +1,25 @@
+footer{
+    background-color: $backgroundFooterColor;
+
+    .container{
+        .mb-4{
+            a {
+                .bi {
+                    font-size: $fontIconSizes;
+                    color:$iconFooterColor;
+                }
+            }            
+        }
+
+    }
+
+    .copyright {
+        background-color: $backgroundCopyrightColor;
+
+        h6{
+            font-size: $fontCopyrigh;
+        }
+    }
+}
+
+
