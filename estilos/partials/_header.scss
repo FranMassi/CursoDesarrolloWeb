@@ -1,5 +1,5 @@
 header {
-    background-color: map-get(colors, backgroundHeaderColor);
+    background-color: map-get($colors, backgroundHeaderColor);
 
     nav {
         .logo {
@@ -9,9 +9,9 @@ header {
         .dropdown {
             .navItems {
                 a {
-                    color: $navTextColorMovile;
+                    color: map-get($colors, navTextColorMovile);
                     text-decoration: none;
-                    font-size: $fontNavsizeMovile;
+                    font-size: map-get($fonts, fontNavSizeMovile);
                     font-weight: bold;
                     letter-spacing: 3px;
                     text-transform: uppercase;  
@@ -44,38 +44,7 @@ header {
     
             .bigNav {
                 display: flex;
-                                
-                .navItems {
-                    a {
-                        color:  $navTextColorDesktop;
-                        text-decoration: none;
-                        font-size: $fontNavsizeDesktop;
-                        font-weight: bold;
-                        letter-spacing: 3px;
-                        text-transform: uppercase;
-                        background-image: linear-gradient(currentColor, currentColor);
-                        background-position: 0% 100%;
-                        background-repeat: no-repeat;
-                        background-size: 0% 2px;
-                        transition: background-size .3s; 
-                        
-                        &:hover{
-                            background-size: 100% 2px;
-                            color:  $navTextColorDesktopHover;
-                        }
-
-                        &:focus {
-                            background-size: 100% 2px;
-                            color:  $navTextColorDesktopHover;
-                        }
-                    }
-    
-                    li {
-                        list-style: none;
-                        padding: 0px 10px 0px 10px;
-                    }
                 }
             }
         }
     }
-}

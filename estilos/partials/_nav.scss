@@ -1,0 +1,26 @@
+header {
+    .navItems {
+        a {
+            color: map-get($colors, navTextColorDesktop);
+            text-decoration: none;
+            font-size: map-get($fonts, fontNavsizeDesktop);
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            @extend %navButtonsAnimationUnderline; 
+            
+            &:hover{
+                @extend %botonNavDesktopHoverYFocus;
+            };
+
+            &:focus {
+                @extend %botonNavDesktopHoverYFocus;
+            };
+        }
+
+        li {
+            list-style: none;
+            padding: 0px 10px 0px 10px;
+        }
+    }
+}
