@@ -88,7 +88,7 @@ header nav .bigNav {
   width: 100%;
   height: auto;
 }
-.index__main .index__noticias .index__noticia__particular a .card-body h1 {
+.index__main .index__noticias .index__noticia__particular a .card-body h3 {
   text-align: center;
   margin-top: 5px;
 }
@@ -98,7 +98,7 @@ header nav .bigNav {
 .index__main .index__nuestrosJuegos {
   margin-bottom: 50px;
 }
-.index__main .index__nuestrosJuegos h1 {
+.index__main .index__nuestrosJuegos h2 {
   margin: 0px 20px 0px 20px;
   font-size: 3rem;
 }

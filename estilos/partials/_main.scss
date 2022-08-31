@@ -19,7 +19,7 @@
                 }
 
                 .card-body{
-                    h1 {
+                    h3 {
                         text-align: center;
                         margin-top: 5px;
                     }
@@ -36,7 +36,7 @@
     .index__nuestrosJuegos{
         margin-bottom: 50px;
 
-        h1{
+        h2{
             @include OurGames (0px, 20px, 0px, 20px, fontOurGamesSize);
         }
     }
