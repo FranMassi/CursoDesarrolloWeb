@@ -1,5 +1,4 @@
-header {
-    .navItems {
+.navItems {
         a {
             color: map-get($colors, navTextColorDesktop);
             text-decoration: none;
@@ -23,4 +22,3 @@ header {
             padding: 0px 10px 0px 10px;
         }
     }
-}

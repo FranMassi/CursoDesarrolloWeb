@@ -10,9 +10,10 @@ html{
 }
 
 @import 
+"./partials/mixins",
 "./partials/maps",
-"./partials/nav",
 "./partials/extends",
+"./partials/nav",
 "./partials/header",
 "./partials/main",
 "./partials/footer";
