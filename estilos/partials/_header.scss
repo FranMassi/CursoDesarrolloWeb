@@ -1,5 +1,5 @@
 header {
-    background-color: $backgroundHeaderColor;
+    background-color: map-get(colors, backgroundHeaderColor);
 
     nav {
         .logo {
