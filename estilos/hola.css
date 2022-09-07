@@ -181,7 +181,7 @@ header {
 }
 
 /*_______________________________________Team_______________________________________*/
-.team-main {
+.team__main {
     text-align: center;
     margin: 50px 0px 50px 0px;
 }
@@ -200,7 +200,7 @@ header {
 }
 
 /*------------Sobre el equipo-----------*/
-.team-main h1 {
+.team__main h1 {
     padding: 100px 0px 40px 0;
     text-transform: uppercase;
     font-size: xxx-large;

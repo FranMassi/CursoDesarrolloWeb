@@ -1,0 +1,89 @@
+.team_main {
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+    
+    .team__sobreNosostros {
+        img {
+            width: 50%;
+            height: auto;
+        }
+        
+        p {
+            color:#1c1c2c;
+            font-size: large;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+    }
+
+    h1 {
+        padding: 100px 0px 40px 0;
+        text-transform: uppercase;
+        font-size: xxx-large;
+    }
+
+    .team__equipo {
+        .team__miembro{
+            img {
+                padding: 10px;
+                margin-bottom: -100px;
+            }
+            
+            h1{
+                font-size: xx-large;
+            }
+
+            p{
+                text-align: left;
+                font-size: medium;
+            }
+        }
+    }
+}
+
+
+/*________________________________________________________________DESKTOP________________________________________________________________*/
+@media screen and (min-width: 992px){
+    .team-main {
+        margin: 50px 0px 50px 0px;
+
+        .team__sobreNosostros {
+            img {
+                width: 40%;
+                height: auto;
+            }
+    
+            p {
+                font-size: x-large;
+                margin-bottom: 0px;
+            }
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            font-size: xxx-large;
+        }
+
+        .team__equipo {
+            .team__miembro{
+                img {
+                    padding: 10px;
+                    margin-bottom: -100px;
+                }
+                
+                h1{
+                    font-size: xxx-large;
+                    margin-bottom: -20px;
+                }
+
+                transition: all .8s ease-in-out;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+}

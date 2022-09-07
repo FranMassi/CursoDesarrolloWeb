@@ -1,0 +1,59 @@
+.contact__main {
+    margin: 50px;
+
+    h1 {
+        margin: 50px 0px 50px 0px;
+        font-size: 40px;
+    }
+    
+    .contact__contactaNos {
+        .contact__texto {
+            width: 80%;
+
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+
+        .contact__TodoElCuestionario {
+            width: 50%;
+            padding: 15px;
+            background-color: #bdbdbd;
+            
+            .contact__cuestionario {
+                margin: 20px 0px 30px 0px;
+            }
+        }
+    }
+}
+
+/*________________________________________________________________DESKTOP________________________________________________________________*/
+@media screen and (min-width: 992px){
+    .contact__main {   
+        h1 {   
+            margin: 100px 0px 50px 0px;
+            font-size: 60px;
+        }
+
+        .contact__contactaNos {
+            .contact__texto {
+                margin-top: 15px;
+
+                p {
+                    width: 90%;
+                    font-size: large;
+                }
+            }
+
+            .contact__TodoElCuestionario {
+                width: 50%;
+                padding: 25px 25px 25px 25px;
+                background-color: #bdbdbd;
+
+                .contact__cuestionario {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
