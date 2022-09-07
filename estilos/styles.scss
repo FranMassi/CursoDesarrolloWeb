@@ -10,8 +10,10 @@ html{
 }
 
 @import 
-"./partials/font",
-"./partials/colors",
+"./partials/mixins",
+"./partials/maps",
+"./partials/extends",
+"./partials/nav",
 "./partials/header",
 "./partials/main",
 "./partials/footer";

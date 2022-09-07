@@ -1,7 +1,7 @@
 /*_______________________________________Index_______________________________________*/
 .index__main{
     margin-top: 100px;
-    background-color: $backgroundBodyColor;
+    background-color: map-get($colors, backgroundBodyColor);
 
     .index__noticias{
         margin-bottom: 10px;
@@ -11,7 +11,7 @@
 
             a {
                 text-decoration: none;
-                 color: $noticeTextColor;
+                 color: map-get($colors,  noticeTextColor);
 
                  img {
                     width: 100%;
@@ -19,7 +19,7 @@
                 }
 
                 .card-body{
-                    h1 {
+                    h3 {
                         text-align: center;
                         margin-top: 5px;
                     }
@@ -36,9 +36,8 @@
     .index__nuestrosJuegos{
         margin-bottom: 50px;
 
-        h1{
-            margin: 0px 20px 0px 20px;
-            font-size: $fontOurGamesSize;
+        h2{
+            @include OurGames (0px, 20px, 0px, 20px, fontOurGamesSize);
         }
     }
 
@@ -62,7 +61,7 @@
                             .card-body{
                                 p {
                                     display: flex;
-                                    font-size: $fontNoticeSize;
+                                    font-size: map-get($fonts, fontNoticeSize);
                                 }
                             }
                     }
