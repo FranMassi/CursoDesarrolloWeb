@@ -1,7 +1,0 @@
-@mixin OurGames ($mup, $mr, $md, $ml, $sizes) {
-    margin: $mup $mr $md $ml;
-    font-size: map-get($fonts, $sizes);
-};
-
-@import
-"./maps";

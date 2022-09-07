@@ -1,12 +1,12 @@
 footer{
-    background-color: map-get($colors, backgroundFooterColor);
+    background-color: $backgroundFooterColor;
 
     .container{
         .mb-4{
             a {
                 .bi {
-                    font-size: map-get($fonts, fontIconSizes);
-                    color:map-get($colors, iconFooterColor);
+                    font-size: $fontIconSizes;
+                    color:$iconFooterColor;
                 }
             }            
         }
@@ -14,10 +14,10 @@ footer{
     }
 
     .copyright {
-        background-color: map-get($colors, backgroundCopyrightColor);
+        background-color: $backgroundCopyrightColor;
 
         h6{
-            font-size: map-get($fonts, fontSizesCopyrigh);
+            font-size: $fontCopyrigh;
         }
     }
 }
