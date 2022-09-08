@@ -1,21 +1,38 @@
 $colors: (
+//-------------------------Header------------------------->
     backgroundHeaderColor: #1c1c2c,
     navTextColorMovile:#f9d904,
     navTextColorDesktop: #FFF,
     navTextColorDesktopHover: #f9d904,
+
+//-------------------------General Body------------------------->
     backgroundBodyColor: #FFF,
+
+//-------------------------Index------------------------->
     noticeTextColor:#1c1c2c,
+
+//-------------------------Contact------------------------->
+    backgroundCouestionarioColor: #bdbdbd,
+
+//-------------------------Games------------------------->
+    backgroundinformaciónDelJuego: #1c1c2c,
+
+//-------------------------Footer------------------------->
     backgroundFooterColor: #1c1c2c,
     iconFooterColor: #FFF,
     backgroundCopyrightColor: #1c1c2c,
 );
 
 $fonts:(
+//-------------------------Header------------------------->
     fontNavSizeMovile: 1.5rem,
     fontNavsizeDesktop: 1.7rem,
-    fontOurGamesSize: 3rem,
+//-------------------------Index------------------------->
+    fontOurGamesSize: 2rem,
+    fontOurGamesDesktopSize: 2rem,
     fontNoticeSize: 1rem,
-    fontIconSizes: 2rem,
+//-------------------------Footer------------------------->
+    fontIconSizes: 1rem,
     fontSizesCopyrigh: 1rem,
 );
 

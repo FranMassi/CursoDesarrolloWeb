@@ -1,8 +1,8 @@
-.games_main {
+.games__main {
     padding-bottom: 50px;
 
     .games__informacionDelJuego {
-        background-color:#1c1c2c;
+        background-color: map-get($colors, backgroundinformaciónDelJuego);
         margin-top: 10px;
 
         .games__gameCover {
@@ -72,8 +72,8 @@
 }
 
 /*________________________________________________________________DESKTOP________________________________________________________________*/
-@media screen and (min-width: 992px){
-    .games_main{
+@media screen and (min-width: $mediaScreenDesktop){
+    .games__main{
         .games__infoYValoraciones{
             .games__informacionDelJuego {
                 background-image: url(https://i.pinimg.com/originals/a9/9e/e5/a99ee553b34b3ff0668f952fcc565dab.jpg);

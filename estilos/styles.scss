@@ -9,15 +9,16 @@ html{
     }
 }
 
-@import 
+@import
 "./partials/mixins",
 "./partials/maps",
 "./partials/extends",
+"./partials/@mediaScreen",
 "./partials/nav",
 "./partials/header",
 "./partials/index",
-"./partials/games",
-"./partials/contact",
-"./partials/news",
 "./partials/team",
+"./partials/contact",
+"./partials/games",
+"./partials/news",
 "./partials/footer";

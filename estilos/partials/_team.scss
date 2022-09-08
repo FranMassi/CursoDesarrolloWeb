@@ -1,4 +1,4 @@
-.team_main {
+.team__main {
     text-align: center;
     margin: 50px 0px 50px 0px;
     
@@ -17,7 +17,7 @@
     }
 
     h1 {
-        padding: 100px 0px 40px 0;
+        padding: 50px 0px 40px 0;
         text-transform: uppercase;
         font-size: xxx-large;
     }
@@ -26,16 +26,17 @@
         .team__miembro{
             img {
                 padding: 10px;
-                margin-bottom: -100px;
             }
             
             h1{
                 font-size: xx-large;
+                margin-top: -50px;
             }
 
             p{
                 text-align: left;
                 font-size: medium;
+                margin-bottom: 30px;
             }
         }
     }
@@ -43,8 +44,8 @@
 
 
 /*________________________________________________________________DESKTOP________________________________________________________________*/
-@media screen and (min-width: 992px){
-    .team-main {
+@media screen and (min-width: $mediaScreenDesktop){
+    .team__main {
         margin: 50px 0px 50px 0px;
 
         .team__sobreNosostros {
@@ -69,11 +70,9 @@
             .team__miembro{
                 img {
                     padding: 10px;
-                    margin-bottom: -100px;
                 }
                 
                 h1{
-                    font-size: xxx-large;
                     margin-bottom: -20px;
                 }
 

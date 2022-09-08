@@ -22,4 +22,20 @@ footer{
     }
 }
 
+/*________________________________________________________________DESKTOP________________________________________________________________*/
+@media screen and (min-width: $mediaScreenDesktop){
+    footer{
+        .container{
+            .mb-4{
+                a {
+                    .bi {
+                        font-size: map-get($fonts, fontOurGamesDesktopSize);
+                    }
+                }            
+            }
+    
+        }
+    }
+}
+
 

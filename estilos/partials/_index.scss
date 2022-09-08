@@ -1,4 +1,3 @@
-/*_______________________________________Index_______________________________________*/
 .index__main{
     margin-top: 100px;
     background-color: map-get($colors, backgroundBodyColor);
@@ -43,7 +42,7 @@
 }
 
 /*________________________________________________________________DESKTOP________________________________________________________________*/
-@media screen and (min-width: 992px){
+@media screen and (min-width: $mediaScreenDesktop){
     .index__main{
         .container-fluid{
             .index__noticias{

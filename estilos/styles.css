@@ -41,17 +41,6 @@ header {
 header nav .logo {
   margin-left: 20px;
 }
-header nav .dropdown .navItems a {
-  color: #f9d904;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-header nav .dropdown .navItems li {
-  padding-left: 10px;
-}
 header nav .bigNav {
   display: none;
 }
@@ -70,7 +59,6 @@ header nav .bigNav {
     display: flex;
   }
 }
-/*_______________________________________Index_______________________________________*/
 .index__main {
   margin-top: 100px;
   background-color: #FFF;
@@ -101,7 +89,7 @@ header nav .bigNav {
 }
 .index__main .index__nuestrosJuegos h2 {
   margin: 0px 20px 0px 20px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 /*________________________________________________________________DESKTOP________________________________________________________________*/
@@ -117,66 +105,67 @@ header nav .bigNav {
     font-size: 1rem;
   }
 }
-.games_main {
-  padding-bottom: 50px;
-}
-.games_main .games__informacionDelJuego {
-  background-color: #1c1c2c;
-  margin-top: 10px;
-}
-.games_main .games__informacionDelJuego .games__gameCover {
-  padding-top: 50px;
-}
-.games_main .games__informacionDelJuego .games__infoDelJuego {
-  margin-bottom: 50px;
-  width: 80%;
-  color: #FFF;
-}
-.games_main .games__informacionDelJuego .games__infoDelJuego h1 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin: 10px 0px 10px 0px;
-}
-.games_main .games__informacionDelJuego .games__infoDelJuego p {
-  font-size: 16px;
-}
-.games_main .games__informacionDelJuego .games__infoDelJuego hr {
-  margin: 10px 0px 10px 0px;
-}
-.games_main .games__informacionDelJuego .games__infoDelJuego h4 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-.games_main .games__informacionDelJuego .games__infoDelJuego .games__gamesStore img {
-  margin: 10px 10px 0px 0px;
-}
-.games_main .games__valoraciones {
-  margin: 20px 0px 20px 0px;
-  height: 500px;
-}
-.games_main .games__valoraciones hr {
-  border: #000000 1px solid;
-  width: 90%;
-  margin: 10px 0px 10px 0px;
-}
-.games_main .games__valoraciones p {
-  width: 85%;
-}
-.games_main .clasificaciónPorEdad .usa, .games_main .clasificaciónPorEdad .ue {
+.team__main {
   text-align: center;
-  width: 75px;
-  height: 75px;
-  margin-left: 20px;
+  margin: 50px 0px 50px 0px;
 }
-.games_main .clasificaciónPorEdad .usa img, .games_main .clasificaciónPorEdad .ue img {
-  max-width: 100%;
-  max-height: 100%;
+.team__main .team__sobreNosostros img {
+  width: 50%;
+  height: auto;
+}
+.team__main .team__sobreNosostros p {
+  color: #1c1c2c;
+  font-size: large;
+  width: 80%;
+  margin-bottom: 20px;
+}
+.team__main h1 {
+  padding: 50px 0px 40px 0;
+  text-transform: uppercase;
+  font-size: xxx-large;
+}
+.team__main .team__equipo .team__miembro img {
+  padding: 10px;
+}
+.team__main .team__equipo .team__miembro h1 {
+  font-size: xx-large;
+  margin-top: -50px;
+}
+.team__main .team__equipo .team__miembro p {
+  text-align: left;
+  font-size: medium;
+  margin-bottom: 30px;
 }
 
 /*________________________________________________________________DESKTOP________________________________________________________________*/
 @media screen and (min-width: 992px) {
-  .games_main .games__infoYValoraciones .games__informacionDelJuego {
-    background-image: url(https://i.pinimg.com/originals/a9/9e/e5/a99ee553b34b3ff0668f952fcc565dab.jpg);
+  .team__main {
+    margin: 50px 0px 50px 0px;
+  }
+  .team__main .team__sobreNosostros img {
+    width: 40%;
+    height: auto;
+  }
+  .team__main .team__sobreNosostros p {
+    font-size: x-large;
+    margin-bottom: 0px;
+  }
+  .team__main h1 {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: xxx-large;
+  }
+  .team__main .team__equipo .team__miembro {
+    transition: all 0.8s ease-in-out;
+  }
+  .team__main .team__equipo .team__miembro img {
+    padding: 10px;
+  }
+  .team__main .team__equipo .team__miembro h1 {
+    margin-bottom: -20px;
+  }
+  .team__main .team__equipo .team__miembro:hover {
+    transform: scale(1.1);
   }
 }
 .contact__main {
@@ -186,14 +175,10 @@ header nav .bigNav {
   margin: 50px 0px 50px 0px;
   font-size: 40px;
 }
-.contact__main .contact__contactaNos .contact__texto {
-  width: 80%;
-}
 .contact__main .contact__contactaNos .contact__texto h2 {
   margin-bottom: 20px;
 }
 .contact__main .contact__contactaNos .contact__TodoElCuestionario {
-  width: 50%;
   padding: 15px;
   background-color: #bdbdbd;
 }
@@ -217,14 +202,76 @@ header nav .bigNav {
   .contact__main .contact__contactaNos .contact__TodoElCuestionario {
     width: 50%;
     padding: 25px 25px 25px 25px;
-    background-color: #bdbdbd;
   }
   .contact__main .contact__contactaNos .contact__TodoElCuestionario .contact__cuestionario {
     margin-bottom: 30px;
   }
 }
+.games__main {
+  padding-bottom: 50px;
+}
+.games__main .games__informacionDelJuego {
+  background-color: #1c1c2c;
+  margin-top: 10px;
+}
+.games__main .games__informacionDelJuego .games__gameCover {
+  padding-top: 50px;
+}
+.games__main .games__informacionDelJuego .games__infoDelJuego {
+  margin-bottom: 50px;
+  width: 80%;
+  color: #FFF;
+}
+.games__main .games__informacionDelJuego .games__infoDelJuego h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 10px 0px 10px 0px;
+}
+.games__main .games__informacionDelJuego .games__infoDelJuego p {
+  font-size: 16px;
+}
+.games__main .games__informacionDelJuego .games__infoDelJuego hr {
+  margin: 10px 0px 10px 0px;
+}
+.games__main .games__informacionDelJuego .games__infoDelJuego h4 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.games__main .games__informacionDelJuego .games__infoDelJuego .games__gamesStore img {
+  margin: 10px 10px 0px 0px;
+}
+.games__main .games__valoraciones {
+  margin: 20px 0px 20px 0px;
+  height: 500px;
+}
+.games__main .games__valoraciones hr {
+  border: #000000 1px solid;
+  width: 90%;
+  margin: 10px 0px 10px 0px;
+}
+.games__main .games__valoraciones p {
+  width: 85%;
+}
+.games__main .clasificaciónPorEdad .usa, .games__main .clasificaciónPorEdad .ue {
+  text-align: center;
+  width: 75px;
+  height: 75px;
+  margin-left: 20px;
+}
+.games__main .clasificaciónPorEdad .usa img, .games__main .clasificaciónPorEdad .ue img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*________________________________________________________________DESKTOP________________________________________________________________*/
+@media screen and (min-width: 992px) {
+  .games__main .games__infoYValoraciones .games__informacionDelJuego {
+    background-image: url(https://i.pinimg.com/originals/a9/9e/e5/a99ee553b34b3ff0668f952fcc565dab.jpg);
+  }
+}
 .news_main {
   margin: 30px;
+  margin-top: 100px;
 }
 .news_main .news_principalTitle h1 {
   padding: 50px 0px 50px 0px;
@@ -258,75 +305,11 @@ header nav .bigNav {
     width: 80%;
   }
 }
-.team_main {
-  text-align: center;
-  margin: 50px 0px 50px 0px;
-}
-.team_main .team__sobreNosostros img {
-  width: 50%;
-  height: auto;
-}
-.team_main .team__sobreNosostros p {
-  color: #1c1c2c;
-  font-size: large;
-  width: 80%;
-  margin-bottom: 20px;
-}
-.team_main h1 {
-  padding: 100px 0px 40px 0;
-  text-transform: uppercase;
-  font-size: xxx-large;
-}
-.team_main .team__equipo .team__miembro img {
-  padding: 10px;
-  margin-bottom: -100px;
-}
-.team_main .team__equipo .team__miembro h1 {
-  font-size: xx-large;
-}
-.team_main .team__equipo .team__miembro p {
-  text-align: left;
-  font-size: medium;
-}
-
-/*________________________________________________________________DESKTOP________________________________________________________________*/
-@media screen and (min-width: 992px) {
-  .team-main {
-    margin: 50px 0px 50px 0px;
-  }
-  .team-main .team__sobreNosostros img {
-    width: 40%;
-    height: auto;
-  }
-  .team-main .team__sobreNosostros p {
-    font-size: x-large;
-    margin-bottom: 0px;
-  }
-  .team-main h1 {
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    font-size: xxx-large;
-  }
-  .team-main .team__equipo .team__miembro {
-    transition: all 0.8s ease-in-out;
-  }
-  .team-main .team__equipo .team__miembro img {
-    padding: 10px;
-    margin-bottom: -100px;
-  }
-  .team-main .team__equipo .team__miembro h1 {
-    font-size: xxx-large;
-    margin-bottom: -20px;
-  }
-  .team-main .team__equipo .team__miembro:hover {
-    transform: scale(1.1);
-  }
-}
 footer {
   background-color: #1c1c2c;
 }
 footer .container .mb-4 a .bi {
-  font-size: 2rem;
+  font-size: 1rem;
   color: #FFF;
 }
 footer .copyright {
@@ -334,4 +317,11 @@ footer .copyright {
 }
 footer .copyright h6 {
   font-size: 1rem;
+}
+
+/*________________________________________________________________DESKTOP________________________________________________________________*/
+@media screen and (min-width: 992px) {
+  footer .container .mb-4 a .bi {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
