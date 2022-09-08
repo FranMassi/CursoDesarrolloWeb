@@ -17,7 +17,7 @@ footer{
         background-color: map-get($colors, backgroundCopyrightColor);
 
         h6{
-            font-size: map-get($fonts, fontSizesCopyrigh);
+            font-size: map-get($fonts, fontCopyrighSizes);
         }
     }
 }

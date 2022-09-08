@@ -2,7 +2,7 @@
     padding-bottom: 50px;
 
     .games__informacionDelJuego {
-        background-color: map-get($colors, backgroundinformaciónDelJuego);
+        background-color: map-get($colors, backgroundinformaciónDelJuegoColor);
         margin-top: 10px;
 
         .games__gameCover {
@@ -12,16 +12,16 @@
         .games__infoDelJuego {
             margin-bottom: 50px;
             width: 80%;
-            color: #FFF;
+            color: map-get($colors, textInformaciónDelJuegosColor);
 
             h1 {
-                    font-size: 2rem;
+                    font-size: map-get($fonts, fontGameTileSize);
                     text-transform: uppercase;
                     margin: 10px 0px 10px 0px;
             }
 
             p {
-                font-size: 16px;
+                font-size: map-get($fonts, fontGameTextSize);
             }
 
             hr {
@@ -29,7 +29,7 @@
             }
 
             h4 {
-                font-size: 32px;
+                font-size: map-get($fonts, fontAvailableTitleSize);
                 margin-bottom: 10px;
             }
 
@@ -46,7 +46,7 @@
         height: 500px;
 
         hr {
-            border: #000000 1px solid;
+            @include hr (map-get($colors, hrValoracionesColor), 1px, solid);
             width: 90%;
             margin: 10px 0px 10px 0px;
         }
@@ -61,7 +61,7 @@
             text-align: center;
             width: 75px;
             height: 75px;
-            margin-left: 20px;
+            margin-left: 80px;
 
             img {
                 max-width: 100%;

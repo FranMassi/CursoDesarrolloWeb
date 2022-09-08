@@ -9,8 +9,8 @@
         }
         
         p {
-            color:#1c1c2c;
-            font-size: large;
+            color:map-get($colors, textSobreNosotrosColor);
+            font-size: map-get($fonts, fontSobreNosotrosTextSize);
             width: 80%;
             margin-bottom: 20px;
         }
@@ -19,7 +19,7 @@
     h1 {
         padding: 50px 0px 40px 0;
         text-transform: uppercase;
-        font-size: xxx-large;
+        font-size: map-get($fonts, fontTheTeamTitleSize);
     }
 
     .team__equipo {
@@ -29,13 +29,13 @@
             }
             
             h1{
-                font-size: xx-large;
+                font-size: map-get($fonts, fontMemberNameSize);
                 margin-top: -50px;
             }
 
             p{
                 text-align: left;
-                font-size: medium;
+                font-size: map-get($fonts, fontMemberTextSize);
                 margin-bottom: 30px;
             }
         }
@@ -55,7 +55,7 @@
             }
     
             p {
-                font-size: x-large;
+                font-size: map-get($fonts, fontSobreNosotrosTextSize);
                 margin-bottom: 0px;
             }
         }
@@ -63,7 +63,7 @@
         h1 {
             margin-bottom: 40px;
             text-transform: uppercase;
-            font-size: xxx-large;
+            font-size: map-get($fonts, fontTheTeamTitleSize)
         }
 
         .team__equipo {

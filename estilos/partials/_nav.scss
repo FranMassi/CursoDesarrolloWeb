@@ -1,8 +1,8 @@
 .navItems {
         a {
-            color: map-get($colors, navTextColorDesktop);
+            color: map-get($colors, navTextDesktopColor);
             text-decoration: none;
-            font-size: map-get($fonts, fontNavsizeDesktop);
+            font-size: map-get($fonts, fontNavDesktopsize);
             font-weight: bold;
             letter-spacing: 3px;
             text-transform: uppercase;

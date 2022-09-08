@@ -1,16 +1,21 @@
 .news_main {
-    margin: 30px;
-    margin-top: 100px;
+    margin: 50px;
     
     .news_principalTitle{
         h1{
-            padding: 50px 0px 50px 0px;
+            margin: 50px 0px 50px 0px;
+            font-size: map-get($fonts, fontMainTitleSize)
         }
     }
 
     .news_articulos{
         article {
-            h2, h6 {
+            h2 {
+                padding-left: 20px;
+                font-size: map-get($fonts, fontNoticesTitleSize);
+            }
+            
+            h6 {
                 padding-left: 20px;
             }
 
@@ -38,15 +43,13 @@
     .news_main {
         .news_principalTitle{
             h1{
-                padding: 50px 0px 50px 0px;
+                font-size: map-get($fonts, fontMainTitleSize);
+                margin-bottom: 50px;
             }
         }
 
         .news_articulos{
             article {
-                h2 {
-                    font-size: 40px;
-                }
     
                 p {
                     width: 80%;

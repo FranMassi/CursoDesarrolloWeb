@@ -22,6 +22,22 @@ html * {
   color: #f9d904;
 }
 
+.contact__main .contact__contactaNos .contact__TodoElCuestionario {
+  padding: 15px;
+  background-color: #bdbdbd;
+}
+.contact__main .contact__contactaNos .contact__TodoElCuestionario .contact__cuestionario {
+  margin: 20px 0px 30px 0px;
+}
+
+@media screen and (min-width: 992px) {
+  .contact__main .contact__contactaNos .contact__TodoElCuestionario {
+    padding: 25px 25px 25px 25px;
+  }
+  .contact__main .contact__contactaNos .contact__TodoElCuestionario .contact__cuestionario {
+    margin-bottom: 30px;
+  }
+}
 .navItems a {
   color: #FFF;
   text-decoration: none;
@@ -115,25 +131,25 @@ header nav .bigNav {
 }
 .team__main .team__sobreNosostros p {
   color: #1c1c2c;
-  font-size: large;
+  font-size: 1.5rem;
   width: 80%;
   margin-bottom: 20px;
 }
 .team__main h1 {
   padding: 50px 0px 40px 0;
   text-transform: uppercase;
-  font-size: xxx-large;
+  font-size: 3rem;
 }
 .team__main .team__equipo .team__miembro img {
   padding: 10px;
 }
 .team__main .team__equipo .team__miembro h1 {
-  font-size: xx-large;
+  font-size: 2rem;
   margin-top: -50px;
 }
 .team__main .team__equipo .team__miembro p {
   text-align: left;
-  font-size: medium;
+  font-size: 1rem;
   margin-bottom: 30px;
 }
 
@@ -147,13 +163,13 @@ header nav .bigNav {
     height: auto;
   }
   .team__main .team__sobreNosostros p {
-    font-size: x-large;
+    font-size: 1.5rem;
     margin-bottom: 0px;
   }
   .team__main h1 {
     margin-bottom: 40px;
     text-transform: uppercase;
-    font-size: xxx-large;
+    font-size: 3rem;
   }
   .team__main .team__equipo .team__miembro {
     transition: all 0.8s ease-in-out;
@@ -173,38 +189,20 @@ header nav .bigNav {
 }
 .contact__main h1 {
   margin: 50px 0px 50px 0px;
-  font-size: 40px;
+  font-size: 4rem;
 }
 .contact__main .contact__contactaNos .contact__texto h2 {
   margin-bottom: 20px;
-}
-.contact__main .contact__contactaNos .contact__TodoElCuestionario {
-  padding: 15px;
-  background-color: #bdbdbd;
-}
-.contact__main .contact__contactaNos .contact__TodoElCuestionario .contact__cuestionario {
-  margin: 20px 0px 30px 0px;
 }
 
 /*________________________________________________________________DESKTOP________________________________________________________________*/
 @media screen and (min-width: 992px) {
   .contact__main h1 {
     margin: 100px 0px 50px 0px;
-    font-size: 60px;
+    font-size: 4rem;
   }
   .contact__main .contact__contactaNos .contact__texto {
-    margin-top: 15px;
-  }
-  .contact__main .contact__contactaNos .contact__texto p {
-    width: 90%;
-    font-size: large;
-  }
-  .contact__main .contact__contactaNos .contact__TodoElCuestionario {
-    width: 50%;
-    padding: 25px 25px 25px 25px;
-  }
-  .contact__main .contact__contactaNos .contact__TodoElCuestionario .contact__cuestionario {
-    margin-bottom: 30px;
+    margin-top: 20px;
   }
 }
 .games__main {
@@ -223,18 +221,18 @@ header nav .bigNav {
   color: #FFF;
 }
 .games__main .games__informacionDelJuego .games__infoDelJuego h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   margin: 10px 0px 10px 0px;
 }
 .games__main .games__informacionDelJuego .games__infoDelJuego p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 .games__main .games__informacionDelJuego .games__infoDelJuego hr {
   margin: 10px 0px 10px 0px;
 }
 .games__main .games__informacionDelJuego .games__infoDelJuego h4 {
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 .games__main .games__informacionDelJuego .games__infoDelJuego .games__gamesStore img {
@@ -245,7 +243,7 @@ header nav .bigNav {
   height: 500px;
 }
 .games__main .games__valoraciones hr {
-  border: #000000 1px solid;
+  border: #000000, 1px, solid;
   width: 90%;
   margin: 10px 0px 10px 0px;
 }
@@ -256,7 +254,7 @@ header nav .bigNav {
   text-align: center;
   width: 75px;
   height: 75px;
-  margin-left: 20px;
+  margin-left: 80px;
 }
 .games__main .clasificaciónPorEdad .usa img, .games__main .clasificaciónPorEdad .ue img {
   max-width: 100%;
@@ -270,13 +268,17 @@ header nav .bigNav {
   }
 }
 .news_main {
-  margin: 30px;
-  margin-top: 100px;
+  margin: 50px;
 }
 .news_main .news_principalTitle h1 {
-  padding: 50px 0px 50px 0px;
+  margin: 50px 0px 50px 0px;
+  font-size: 4rem;
 }
-.news_main .news_articulos article h2, .news_main .news_articulos article h6 {
+.news_main .news_articulos article h2 {
+  padding-left: 20px;
+  font-size: 2.5rem;
+}
+.news_main .news_articulos article h6 {
   padding-left: 20px;
 }
 .news_main .news_articulos article img {
@@ -296,10 +298,8 @@ header nav .bigNav {
 /*________________________________________________________________DESKTOP________________________________________________________________*/
 @media screen and (min-width: 992px) {
   .news_main .news_principalTitle h1 {
-    padding: 50px 0px 50px 0px;
-  }
-  .news_main .news_articulos article h2 {
-    font-size: 40px;
+    font-size: 4rem;
+    margin-bottom: 50px;
   }
   .news_main .news_articulos article p {
     width: 80%;

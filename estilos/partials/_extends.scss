@@ -8,7 +8,7 @@
 
 %botonNavDesktopHoverYFocus {
     background-size: 100% 2px;
-    color: map-get($colors, navTextColorDesktopHover);
+    color: map-get($colors, navTextDesktopHoverColor);
 };
 
 @import

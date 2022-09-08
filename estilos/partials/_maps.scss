@@ -1,9 +1,8 @@
 $colors: (
 //-------------------------Header------------------------->
     backgroundHeaderColor: #1c1c2c,
-    navTextColorMovile:#f9d904,
-    navTextColorDesktop: #FFF,
-    navTextColorDesktopHover: #f9d904,
+    navTextDesktopColor: #FFF,
+    navTextDesktopHoverColor: #f9d904,
 
 //-------------------------General Body------------------------->
     backgroundBodyColor: #FFF,
@@ -15,7 +14,12 @@ $colors: (
     backgroundCouestionarioColor: #bdbdbd,
 
 //-------------------------Games------------------------->
-    backgroundinformaciónDelJuego: #1c1c2c,
+    backgroundinformaciónDelJuegoColor: #1c1c2c,
+    textInformaciónDelJuegosColor: #FFF,
+    hrValoracionesColor: #000000,
+
+//-------------------------Team------------------------->
+    textSobreNosotrosColor: #1c1c2c,
 
 //-------------------------Footer------------------------->
     backgroundFooterColor: #1c1c2c,
@@ -25,14 +29,32 @@ $colors: (
 
 $fonts:(
 //-------------------------Header------------------------->
-    fontNavSizeMovile: 1.5rem,
-    fontNavsizeDesktop: 1.7rem,
+    fontNavDesktopsize: 1.7rem,
+
 //-------------------------Index------------------------->
     fontOurGamesSize: 2rem,
     fontOurGamesDesktopSize: 2rem,
     fontNoticeSize: 1rem,
+
+//-------------------------Contact------------------------->
+    fontMainTitleSize: 4rem,
+
+//-------------------------Games------------------------->
+    fontGameTileSize: 3rem,
+    fontGameTextSize: 1rem,
+    fontAvailableTitleSize: 2rem,
+
+//-------------------------News------------------------->
+    fontNoticesTitleSize: 2.5rem,
+
+//-------------------------Team------------------------->
+    fontSobreNosotrosTextSize: 1.5rem,
+    fontTheTeamTitleSize: 3rem,
+    fontMemberNameSize: 2rem,
+    fontMemberTextSize: 1rem,
+
 //-------------------------Footer------------------------->
     fontIconSizes: 1rem,
-    fontSizesCopyrigh: 1rem,
+    fontCopyrighSizes: 1rem,
 );
 

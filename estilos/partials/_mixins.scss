@@ -3,5 +3,9 @@
     font-size: map-get($fonts, $sizes);
 };
 
+@mixin hr ($color, $size, $tipe) {
+    border: $color, $size, $tipe;
+}
+
 @import
 "./maps";
