@@ -1,3 +1,5 @@
+// object-fit: cover
+
 $colors: (
 //-------------------------Header------------------------->
     backgroundHeaderColor: #1c1c2c,
@@ -29,7 +31,7 @@ $colors: (
 
 $fonts:(
 //-------------------------Header------------------------->
-    fontNavDesktopsize: 1.7rem,
+    fontNavDesktopsize: 1.5rem,
 
 //-------------------------Index------------------------->
     fontOurGamesSize: 2rem,
@@ -57,4 +59,3 @@ $fonts:(
     fontIconSizes: 1rem,
     fontCopyrighSizes: 1rem,
 );
-

@@ -1,4 +1,8 @@
 .navItems {
+    li{
+        list-style: none;
+        padding: 0px 10px 0px 10px;
+        
         a {
             color: map-get($colors, navTextDesktopColor);
             text-decoration: none;
@@ -6,19 +10,27 @@
             font-weight: bold;
             letter-spacing: 3px;
             text-transform: uppercase;
-            @extend %navButtonsAnimationUnderline; 
+            @extend %navButtonsAnimationUnderline;
             
             &:hover{
                 @extend %botonNavDesktopHoverYFocus;
-            };
+            }
 
             &:focus {
                 @extend %botonNavDesktopHoverYFocus;
-            };
+            }
         }
 
-        li {
-            list-style: none;
-            padding: 0px 10px 0px 10px;
+        .hollow {
+           @include aNav (#0505ff);
         }
+
+        .hades {
+            @include aNav (#ff0526);
+         }
+
+         .rogue {
+            @include aNav (#fbff05);
+         }
     }
+}

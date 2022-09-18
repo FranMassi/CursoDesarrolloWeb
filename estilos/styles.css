@@ -9,7 +9,7 @@ html * {
   font-family: "Rubik", sans-serif;
 }
 
-.navItems a {
+.navItems li a {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@ html * {
   transition: background-size 0.3s;
 }
 
-.navItems a:focus, .navItems a:hover {
+.navItems li a:focus, .navItems li a:hover {
   background-size: 100% 2px;
   color: #f9d904;
 }
@@ -38,17 +38,26 @@ html * {
     margin-bottom: 30px;
   }
 }
-.navItems a {
+.navItems li {
+  list-style: none;
+  padding: 0px 10px 0px 10px;
+}
+.navItems li a {
   color: #FFF;
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
-.navItems li {
-  list-style: none;
-  padding: 0px 10px 0px 10px;
+.navItems li .hollow {
+  color: #0505ff;
+}
+.navItems li .hades {
+  color: #ff0526;
+}
+.navItems li .rogue {
+  color: #fbff05;
 }
 
 header {
@@ -238,6 +247,45 @@ header nav .bigNav {
 .games__main .games__informacionDelJuego .games__infoDelJuego .games__gamesStore img {
   margin: 10px 10px 0px 0px;
 }
+.games__main .game__gameDescription {
+  margin: 50px 0px 30px 0px;
+}
+.games__main .game__gameDescription .descrition {
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+.games__main .game__gameDescription .descrition img {
+  height: auto;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.games__main .game__gameDescription .descrition hr {
+  display: none;
+}
+.games__main .game__gameDescription .descrition h1 {
+  text-align: center;
+}
+.games__main .game__gameDescription .descrition p {
+  text-align: center;
+}
+.games__main .game__gameDescription .descrition-2 {
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+.games__main .game__gameDescription .descrition-2 img {
+  height: auto;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.games__main .game__gameDescription .descrition-2 hr {
+  display: none;
+}
+.games__main .game__gameDescription .descrition-2 h1 {
+  text-align: center;
+}
+.games__main .game__gameDescription .descrition-2 p {
+  text-align: center;
+}
 .games__main .games__valoraciones {
   margin: 20px 0px 20px 0px;
   height: 500px;
@@ -263,8 +311,50 @@ header nav .bigNav {
 
 /*________________________________________________________________DESKTOP________________________________________________________________*/
 @media screen and (min-width: 992px) {
-  .games__main .games__infoYValoraciones .games__informacionDelJuego {
-    background-image: url(https://i.pinimg.com/originals/a9/9e/e5/a99ee553b34b3ff0668f952fcc565dab.jpg);
+  .games__main .games__infoYValoraciones .games__informacionDelJuego .backgroundImgesHades {
+    background-image: url("https://external-preview.redd.it/XocAng3cSdk0Ug5LoYHDyXwbRnsJ9c4cnoYYxw8Ir2g.jpg?auto=webp&s=5544684b7ccb9922e7c043b9716fd18757f084f9");
+  }
+  .games__main .games__infoYValoraciones .games__informacionDelJuego .backgroundImgesHollow {
+    background-image: url("https://i.pinimg.com/originals/a9/9e/e5/a99ee553b34b3ff0668f952fcc565dab.jpg");
+  }
+  .games__main .games__infoYValoraciones .games__informacionDelJuego .backgroundImgesRogue {
+    background-image: url("https://images.alphacoders.com/628/thumb-1920-628608.jpg");
+  }
+  .games__main .games__infoYValoraciones .game__gameDescription .descrition {
+    flex-direction: row !important;
+  }
+  .games__main .games__infoYValoraciones .game__gameDescription .descrition img {
+    height: auto;
+    width: 45%;
+  }
+  .games__main .games__infoYValoraciones .game__gameDescription .descrition hr {
+    display: flex;
+    border: none;
+    border-left: 2px solid hsl(200deg, 10%, 50%);
+    height: 40vh;
+    width: 1px;
+    margin: 0px 30px 0px 30px;
+  }
+  .games__main .games__infoYValoraciones .game__gameDescription .descrition .descrition_text {
+    width: 45%;
+  }
+  .games__main .games__infoYValoraciones .game__gameDescription .descrition-2 {
+    flex-direction: row-reverse !important;
+  }
+  .games__main .games__infoYValoraciones .game__gameDescription .descrition-2 img {
+    height: auto;
+    width: 45%;
+  }
+  .games__main .games__infoYValoraciones .game__gameDescription .descrition-2 hr {
+    display: flex;
+    border: none;
+    border-left: 2px solid hsl(200deg, 10%, 50%);
+    height: 40vh;
+    width: 1px;
+    margin: 0px 30px 0px 30px;
+  }
+  .games__main .games__infoYValoraciones .game__gameDescription .descrition-2 .descrition_text {
+    width: 45%;
   }
 }
 .news_main {
