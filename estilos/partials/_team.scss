@@ -76,7 +76,7 @@
                     margin-bottom: -20px;
                 }
 
-                transition: all .8s ease-in-out;
+                @include animation (all, .8s, ease-in-out);
 
                 &:hover{
                     transform: scale(1.1);

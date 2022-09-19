@@ -47,7 +47,7 @@
         .container-fluid{
             .index__noticias{
                     .index__noticia__particular{
-                        transition: all 1s;
+                        @include animation (all, .5s, linear);
                         
                         &:hover{
                             transform: translate(0px, -50px);

@@ -1,3 +1,4 @@
+//-------------------------Index------------------------->
 @mixin OurGames ($mup, $mr, $md, $ml, $sizes) {
     margin: $mup $mr $md $ml;
     font-size: map-get($fonts, $sizes);
@@ -7,13 +8,20 @@
     border: $color, $size, $tipe;
 }
 
+//-------------------------Nav-bar------------------------->
 @mixin aNav ($color){
     color: $color;
 }
 
+//-------------------------Games------------------------->
 @mixin backgroundImages ($image) {
     background-image: url($image);
 }
+
+//-------------------------Index y Team------------------------->
+@mixin animation ($what, $delay, $curve){
+    transition: $what $delay $curve
+};
 
 @import
 "./maps";

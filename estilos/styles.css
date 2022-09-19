@@ -120,7 +120,7 @@ header nav .bigNav {
 /*________________________________________________________________DESKTOP________________________________________________________________*/
 @media screen and (min-width: 992px) {
   .index__main .container-fluid .index__noticias .index__noticia__particular {
-    transition: all 1s;
+    transition: all 0.5s linear;
   }
   .index__main .container-fluid .index__noticias .index__noticia__particular:hover {
     transform: translate(0px, -50px);
@@ -218,7 +218,7 @@ header nav .bigNav {
   padding-bottom: 50px;
 }
 .games__main .games__informacionDelJuego {
-  background-color: #1c1c2c;
+  background-color: #212121;
   margin-top: 10px;
 }
 .games__main .games__informacionDelJuego .games__gameCover {
